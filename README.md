@@ -83,6 +83,66 @@ plt.legend()
 plt.show()
 ```
 
+<img width="505" height="613" alt="image" src="https://github.com/user-attachments/assets/6f283861-edc7-4832-bd0b-0fcd570592e1" />
+
+## AREA CHART:
+```
+ x = [1, 2, 3, 4, 5]
+ y1 = [10, 12, 14, 16, 18]
+ y2 = [5, 7, 9, 11, 13]
+ y3 = [2, 4, 6, 8, 10]
+ plt.fill_between(x, y1, color='blue')
+ plt.fill_between(x, y2, color='green')
+ plt.plot(x, y1, color='red')
+ plt.plot(x, y2, color='black')
+ plt.legend(['y1','y2'])
+ plt.show()
+```
+
+<img width="460" height="318" alt="image" src="https://github.com/user-attachments/assets/18f66116-1abe-4c8e-a840-f9fe84f8517b" />
+
+## BAR CHART:
+```
+ height = [10, 24, 36, 40, 5]
+ names = ['one', 'two', 'three', 'four', 'five']
+ c1=['red', 'green'] 
+ c2=['b', 'g']
+ plt.bar (names, height, width=0.8, color=c1)
+ plt.xlabel('x - axis')
+ plt.ylabel('y - axis')
+ plt.title('My bar chart!')
+ plt.show()
+```
+
+<img width="459" height="336" alt="image" src="https://github.com/user-attachments/assets/cba47cfc-2d60-43a4-9393-68c77e34458a" />
+
+## HISTOGRAM:
+```
+ x = [2,1,6,4,2,4,8,9,4,2,4,10,6,4,5,7,7,3,2,7,5,3,5,9,2,1]
+ plt.hist(x, bins = 10, color='blue', alpha=0.5)
+ plt.show()
+```
+
+## BOX PLOT:
+```
+ np.random.seed(0)
+ data=np.random.normal(loc=0, scale=1, size=100)
+ data
+```
+
+<img width="418" height="273" alt="image" src="https://github.com/user-attachments/assets/4a002e55-6553-4eac-aac3-3cca9164f0c3" />
+
+```
+ fig, ax= plt.subplots()
+ ax.boxplot(data)
+ ax.set_xlabel('Data')
+ ax.set_ylabel('Values')
+ ax.set_title('Box Plot')
+```
+
+<img width="460" height="366" alt="image" src="https://github.com/user-attachments/assets/07473db5-d0c0-4840-ba43-cf84e9871f8d" />
+
 
 # Result:
- Include your result here
+
+Thus, all the data visualization techniques of matplotlib has been implemented.
